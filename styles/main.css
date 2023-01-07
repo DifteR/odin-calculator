@@ -3,7 +3,7 @@ html{
 }
 #calculator-container{
     display: grid;
-    gap: 50px;
+    gap: 10px 50px;
     grid-template-areas: 
     "textfield textfield textfield textfield textfield"
     "clear plus minus multip divide"
