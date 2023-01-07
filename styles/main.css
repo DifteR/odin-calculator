@@ -1,10 +1,20 @@
 html{
     background-color: #121212;
 }
+button{
+    font-weight: bold;
+    font-size: 32px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+}
+
 #calculator-container{
     width: 500px;
     display: grid;
-    /*gap: 50px 15px;*/
+    gap: 25px 15px;
     grid-template-areas: 
     "textfield textfield textfield textfield textfield"
     "clear plus minus multip divide"
@@ -12,7 +22,7 @@ html{
     "number number number number number";
 }
 #clear{
-    grid-area: class;
+    grid-area: clear;
     background-color: #F98B85; /*https://www.color-name.com/subtle-red.color*/
 }
 #plus{
@@ -27,12 +37,14 @@ html{
 #divide{
     grid-area: divide;
 }
+.number{
+    background-color: #36454f; /*https://www.color-hex.com/color-palette/1407*/
+    color: lightgrey;
+}
 .operator{
     background-color: #85F3F9;
-    /*border-radius:50%;*/
-    width: 40px;
-    height: 40px;
 }
 .textfield{
+    height: 40px;
     grid-area: textfield;
 }
