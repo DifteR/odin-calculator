@@ -9,18 +9,18 @@ html{
     "number number number number number"
     "number number number number number";
 }
-.clear{
+#clear{
     grid-area: class;
 }
-.plus{
+#plus{
     grid-area: plus;
 }
-.minus{
+#minus{
     grid-area: minus;
 }
-.multiply{
+#multiply{
     grid-area: multip;
 }
-.divide{
+#divide{
     grid-area: divide;
 }
