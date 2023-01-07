@@ -5,13 +5,22 @@ html{
     display: grid;
     grid-template-areas: 
     "textfield textfield textfield textfield textfield"
-    "operator operator operator operator operator"
+    "clear plus minus multiply divide"
     "number number number number number"
     "number number number number number";
 }
-.operator{
-    grid-area: operator;
+.clear{
+    grid-area: class;
 }
-.number{
-    grid-area: number;
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.multiply{
+    grid-area: multiply;
+}
+.divide{
+    grid-area: divide;
 }
