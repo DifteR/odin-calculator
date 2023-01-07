@@ -16,26 +16,57 @@ button{
     display: grid;
     gap: 25px 15px;
     grid-template-areas: 
-    "textfield textfield textfield textfield textfield"
-    "clear plus minus multip divide"
-    "number number number number number"
-    "number number number number number";
+    "textfield textfield textfield textfield"
+    "plus min multip divide"
+    "one two three four"
+    "five six seven eight"
+    "nine zer clear equals";
 }
 #clear{
     grid-area: clear;
     background-color: #F98B85; /*https://www.color-name.com/subtle-red.color*/
 }
-#plus{
+#add{
     grid-area: plus;
 }
-#minus{
-    grid-area: minus;
+#substract{
+    grid-area: min;
 }
 #multiply{
     grid-area: multip;
 }
 #divide{
     grid-area: divide;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#seven{
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+#nine{
+    grid-area: nine;
+}
+#zero{
+    grid-area: zer;
 }
 .number{
     background-color: #36454f; /*https://www.color-hex.com/color-palette/1407*/
@@ -47,4 +78,11 @@ button{
 .textfield{
     height: 40px;
     grid-area: textfield;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-style: none;
+}
+#equals{
+    grid-area: equals;
+    background-color: #06747A;
 }
