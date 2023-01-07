@@ -1,3 +1,6 @@
+html{
+    background-color: aquamarine;
+}
 #calculator-container{
     display: grid;
     grid-template-areas: 
