@@ -1,0 +1,14 @@
+.calculator-container{
+    display: grid;
+    grid-template-areas: 
+    "textfield textfield textfield textfield textfield"
+    "operator operator operator operator operator"
+    "number number number number number"
+    "number number number number number";
+}
+#operator{
+    grid-area: operator;
+}
+#number{
+    grid-area: number;
+}
