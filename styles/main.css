@@ -1,5 +1,5 @@
 html{
-    background-color: aquamarine;
+    background-color: #121212;
 }
 #calculator-container{
     width: 500px;
@@ -13,6 +13,7 @@ html{
 }
 #clear{
     grid-area: class;
+    background-color: #F98B85; /*https://www.color-name.com/subtle-red.color*/
 }
 #plus{
     grid-area: plus;
@@ -27,6 +28,7 @@ html{
     grid-area: divide;
 }
 .operator{
+    background-color: #85F3F9;
     border-radius:50%;
     width: 40px;
     height: 40px;
