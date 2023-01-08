@@ -75,7 +75,7 @@ button{
 .operator{
     background-color: #85F3F9;
 }
-.textfield{
+#textfield{
     height: 40px;
     grid-area: textfield;
     background-color: lightgray;
