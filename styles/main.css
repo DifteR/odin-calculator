@@ -18,9 +18,9 @@ button{
     grid-template-areas: 
     "textfield textfield textfield textfield"
     "plus min multip divide"
-    "one two three four"
+    "nine zer clear equals"
     "five six seven eight"
-    "nine zer clear equals";
+    "one two three four";
 }
 #clear{
     grid-area: clear;
