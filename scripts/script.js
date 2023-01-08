@@ -1,9 +1,4 @@
-/*const textfield = document.getElementById("textfield");
-const numberElements = document.getElementsByClassName("number");
-
-numberElements.addEventListener(click, function (textfield) {
-    textfield = textfield + this.value;
-})*/
+var values = [];
 
 document.addEventListener("DOMContentLoaded", function(){
     var textBox = document.querySelector("#textfield");
@@ -11,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     numbers.forEach(num => {
         num.addEventListener("click", function(e){
-            console.log(this.value)
             textBox.value += this.value; 
         })
     });
@@ -24,8 +18,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     numbers.forEach(num => {
         num.addEventListener("click", function(e){
-            console.log(this.value)
-            textBox.value += this.value; 
+            values.push(textBox.value);
+            textBox.value = this.value; 
+            console.table(values);
         })
     });
 })
