@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   document.getElementById("equals").addEventListener("click", function (e) {
-    textBox.value = eval(textBox.value);
+    textBox.value = eval(textBox.value); //this allows user to run any javascript they want. Need to fix this
+  });
+  document.getElementById("clear").addEventListener("click", function (e) {
+    textBox.value = "";
   });
 });
