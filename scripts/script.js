@@ -1,4 +1,5 @@
 var values = [];
+var operators = [];
 
 document.addEventListener("DOMContentLoaded", function(){
     var textBox = document.querySelector("#textfield");
@@ -6,7 +7,15 @@ document.addEventListener("DOMContentLoaded", function(){
 
     numbers.forEach(num => {
         num.addEventListener("click", function(e){
-            textBox.value += this.value; 
+            if (!isNaN(textBox.value)) {
+                textBox.value += this.value;
+                
+            }
+            else{
+                operators.push(textBox.value);
+                textBox.value = this.value;
+            }
+             
         })
     });
 })
