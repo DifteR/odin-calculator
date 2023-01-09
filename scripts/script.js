@@ -1,9 +1,7 @@
-var values = [];
-
 document.addEventListener("DOMContentLoaded", function () {
-  var textBox = document.querySelector("#textfield");
-  var numbers = document.querySelectorAll(".number");
-  var operators = document.querySelectorAll(".operator");
+  let textBox = document.querySelector("#textfield");
+  let numbers = document.querySelectorAll(".number");
+  let operators = document.querySelectorAll(".operator");
 
   numbers.forEach((num) => {
     num.addEventListener("click", function (e) {
@@ -13,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   operators.forEach((num) => {
     num.addEventListener("click", function (e) {
-      values.push(textBox.value);
       textBox.value += this.value;
     });
   });
